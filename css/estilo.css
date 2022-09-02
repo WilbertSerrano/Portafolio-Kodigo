@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img-fluid{
+  object-fit: cover;
+  height: 100% !important;
+  width: auto !important;
+}
+
+/* INICIO */
+.menu{
+    height: 10vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    width: 100%;
+}
+
+header.header {
+    width: 100%;
+    height: 90vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: #242424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+  }
+  header.header .texto-header {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  header.header .texto-header p#hola-header {
+    font-size: 1.5625em;
+    margin-bottom: 0px;
+  }
+
+  header.header .texto-header h1#nombre-header {
+    font-size: 3.4375em;
+    margin-top: -15px;
+    margin-bottom: -5px;
+  }
+
+  header.header .texto-header p#especialidad-header {
+    font-size: 1.125em;
+    margin-bottom: 30px;
+  }
+  
+  header.header .img-header {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  header.header .img-header img {
+    height: 100%;
+  }
+
+.flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas-destacados{
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.card{
+  padding: 0px 0px !important;
+}
+.proyectos-destacados-home{
+    padding-top: 60px;
+}
+.formulario-contacto{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 60px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 540px) {
+    header.header {
+        font-size: 14px;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      header.header :nth-child(1) {
+            order: 2;
+      }
+      header.header :nth-child(2) {
+            order: 1;
+      }
+      header.header .texto-header {
+        height: 100%;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+      }
+      header.header .texto-header #hola-header {
+        text-align: center;
+        display: none;
+      }
+      header.header .texto-header #nombre-header {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+      }
+      header.header .img-header {
+        height: auto;
+        margin-bottom: 30px;
+      }
+      header.header .img-header img {
+        max-width: 450px;
+        height: auto;
+      }
+}
+
+/* SOBRE MI */
+
+section.habilidades{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+
+section.habilidades div.habilidad{
+  width: 100%;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+/* PORTAFOLIO */
+.proyectos-portafolio {
+  padding-top: 0;
+  width: 100%;
+  height: 1200px;
+  background: #242424;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyectos-portafolio h2 {
+  font-size: 3em;
+  padding-bottom: 50px;
+  color: #ffffff;
+}
+
+.proyectos-portafolio .tarjetas-portafolio {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card-img-top{
+  object-fit: cover;
+  height: 250px;
+}
+
+@media screen and (max-width: 1024px) {
+  .proyectos-portafolio {
+    height: 1650px;
+  }
+  .proyectos-portafolio h2 {
+    padding-bottom: 70px;
+  }
+  .proyectos-portafolio .tarjetas-portafolio {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .proyectos-portafolio {
+    height: 2900px;
+    font-size: 14px;
+  }
+  .proyectos-portafolio h2 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .proyectos-portafolio .tarjetas-portafolio {
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+}
